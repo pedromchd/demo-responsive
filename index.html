@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="script.js"></script>
+</head>
+
+<body class="h-screen flex flex-col">
+  <header class="p-2 bg-blue-100">
+    <div class="flex items-center justify-between">
+      <img src="https://img.logoipsum.com/245.svg" alt="">
+      <h1 class="ml-2 flex-1 text-2xl font-bold">Lorem ipsum</h1>
+      <button 
+        class="p-0.5 rounded-sm bg-blue-300 grid block min-[400px]:hidden"
+        onclick="$('nav').toggleClass('hidden')"
+      >
+        <svg width="25" height="25" viewBox="0 0 100 100">
+          <path d="M 20 25 L 80 25" stroke="#000" stroke-width="10" stroke-linecap="round" />
+          <path d="M 20 50 L 80 50" stroke="#000" stroke-width="10" stroke-linecap="round" />
+          <path d="M 20 75 L 80 75" stroke="#000" stroke-width="10" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+    <nav class="mt-2 hidden min-[400px]:block">
+      <ul class="grid gap-2 min-[400px]:grid-cols-3">
+        <li class="py-1 text-center rounded-sm bg-blue-300"><a href="#">Link 1</a></li>
+        <li class="py-1 text-center rounded-sm bg-blue-300"><a href="#">Link 2</a></li>
+        <li class="py-1 text-center rounded-sm bg-blue-300"><a href="#">Link 3</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="flex-grow p-2 bg-gray-100">
+    <section>
+      <h2 class="mb-2 text-2xl font-bold">Gatos</h2>
+      <h3 class="mb-2 text-xl">Avaliação dos gatos:</h3>
+      <article class="gap-2 grid min-[400px]:grid-cols-2 min-[600px]:grid-cols-3">
+        <div class="card">
+          <img src="http://placekitten.com/300/100" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title font-bold">Gato burro</h5>
+            <p class="card-text">Olha que estúpido.</p>
+            <a href="#" class="mt-2 btn btn-warning">Devorar?</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="http://placekitten.com/200/100" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title font-bold">Gato dúvida</h5>
+            <p class="card-text">Este gato está com muita dúvida.</p>
+            <a href="#" class="mt-2 btn btn-primary">Responder?</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="http://placekitten.com/200/200" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title font-bold">Gato curioso</h5>
+            <p class="card-text">O que ele está procurando.</p>
+            <a href="#" class="mt-2 btn btn-danger">Será?</a>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer class="p-2 bg-blue-100">
+    <p class="text-center text-sm">&copy; 2023 Pedro</p>
+  </footer>
+</body>
+
+</html>
